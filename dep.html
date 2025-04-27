@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Page Title -->
+    <title>Project#12</title>
+
+    <!-- External CSS Dependencies -->
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- Animate.css for animations -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Google Fonts - Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="c4.css" />
+  </head>
+
+  <body>
+    <!-- Main Application Container -->
+    <div class="container">
+      <!-- ==================== HEADER SECTION ==================== -->
+      <div class="header">
+        <!-- Dashboard Title -->
+        <div>
+          <h2>Project#12</h2>
+        </div>
+
+        <!-- Primary Navigation Buttons -->
+        <div class="header-buttons">
+          <!-- Employees Page Link -->
+          <a href="/emp.html">
+            <button class="btn btn-outline btn-sm">
+              <i class="fas fa-users"></i> Employees
+            </button>
+          </a>
+
+          <!-- Departments Page Link -->
+          <a href="/dep.html">
+            <button class="btn btn-outline btn-sm">
+              <i class="fas fa-building"></i> Departments
+            </button>
+          </a>
+        </div>
+
+        <!-- Logout Button -->
+        <div class="header-buttons">
+          <a href="login.html">
+            <button class="btn btn-outline btn-sm logout">
+              <i class="fas fa-sign-out-alt"></i> Logout
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <!-- ==================== MAIN CONTENT AREA ==================== -->
+      <div class="main-content">
+        <!-- Page Title and Action Buttons Section -->
+        <div class="page-title">
+          <div></div>
+          <!-- Empty div for potential future content -->
+
+          <!-- Action Buttons Container -->
+          <div class="action-buttons">
+            <!-- Add New Item Button -->
+            <button class="btn btn-outline btn-sm btn-add">
+              <i class="fas fa-download"></i> Add New
+            </button>
+          </div>
+        </div>
+
+        <!-- ==================== STATISTICS CARDS ==================== -->
+        <div class="stats-cards">
+          <!-- Card 1 -->
+          <div class="stat-card">
+            <div class="card-header">
+              <div>
+                <div class="card-value">1.007</div>
+                <div class="card-label">Test</div>
+              </div>
+              <div class="card-icon purple">
+                <i class="fas fa-users"></i>
+              </div>
+            </div>
+            <div class="card-change positive">
+              <i class="fas fa-arrow-up"></i>
+              <span>0.8% Test Test</span>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="stat-card">
+            <div class="card-header">
+              <div>
+                <div class="card-value">1.007</div>
+                <div class="card-label">Test</div>
+              </div>
+              <div class="card-icon purple">
+                <i class="fas fa-users"></i>
+              </div>
+            </div>
+            <div class="card-change positive">
+              <i class="fas fa-arrow-up"></i>
+              <span>0.8% Test Test</span>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="stat-card">
+            <div class="card-header">
+              <div>
+                <div class="card-value">1.007</div>
+                <div class="card-label">Test</div>
+              </div>
+              <div class="card-icon purple">
+                <i class="fas fa-users"></i>
+              </div>
+            </div>
+            <div class="card-change positive">
+              <i class="fas fa-arrow-up"></i>
+              <span>0.8% Test Test</span>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="stat-card">
+            <div class="card-header">
+              <div>
+                <div class="card-value">1.007</div>
+                <div class="card-label">Test</div>
+              </div>
+              <div class="card-icon purple">
+                <i class="fas fa-users"></i>
+              </div>
+            </div>
+            <div class="card-change positive">
+              <i class="fas fa-arrow-up"></i>
+              <span>0.8% Test Test</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==================== DATA TABLE SECTION ==================== -->
+        <div class="table-card">
+          <div class="table-container">
+            <table class="data-table">
+              <!-- Table Header -->
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+
+              <!-- Table Body -->
+              <tbody>
+                <!-- Row 1 -->
+                <tr>
+                  <td>#1</td>
+                  <td>Dep 1</td>
+                  <td>
+                    <!-- Edit Button -->
+                    <button class="btn btn-outline btn-sm btn-edit">
+                      <i class="fas fa-pen-to-square"></i> Edit
+                    </button>
+                    <!-- Delete Button -->
+                    <button class="btn btn-outline btn-sm btn-delete">
+                      <i class="fas fa-trash"></i> Delete
+                    </button>
+                  </td>
+                </tr>
+
+                <!-- Row 2 -->
+                <tr>
+                  <td>#2</td>
+                  <td>Dep 2</td>
+                  <td>
+                    <!-- Edit Button -->
+                    <button class="btn btn-outline btn-sm btn-edit">
+                      <i class="fas fa-pen-to-square"></i> Edit
+                    </button>
+                    <!-- Delete Button -->
+                    <button class="btn btn-outline btn-sm btn-delete">
+                      <i class="fas fa-trash"></i> Delete
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

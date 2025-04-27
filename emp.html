@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character set and responsive viewport -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Page title -->
+    <title>Project#12</title>
+    
+    <!-- External CSS libraries -->
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- Animate.css for animations -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Google Fonts - Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS file -->
+    <link rel="stylesheet" href="c4.css" />
+  </head>
+  
+  <body>
+    <!-- Main container for the entire dashboard -->
+    <div class="container">
+      
+      <!-- Header section with navigation -->
+      <div class="header">
+        <!-- Dashboard title -->
+        <div>
+          <h2>Project#12</h2>
+        </div>
+
+        <!-- Navigation buttons group 1 -->
+        <div class="header-buttons">
+          <!-- Employees button -->
+          <a href="/emp.html"
+            ><button class="btn btn-outline btn-sm" href="/emp.html">
+              <i class="fas fa-users"></i> Employees
+            </button></a
+          >
+          <!-- Departments button -->
+          <a href="/dep.html"
+            ><button class="btn btn-outline btn-sm">
+              <i class="fas fa-building"></i> Departments
+            </button></a
+          >
+        </div>
+
+          <!-- Logout button -->
+        <div class="header-buttons">
+          <a href="login.html">
+            <button class="btn btn-outline btn-sm logout">
+              <i class="fas fa-sign-out-alt"></i> Logout
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <!-- Main content area -->
+      <div class="main-content">
+        <!-- Search and filter section -->
+        <div class="page-title">
+          <div class="search-sort-container">
+            <!-- Search bar with icon -->
+            <div class="search-bar">
+              <label for="search"></label>
+              <i class="fas fa-search"></i>
+              <input
+                type="text"
+                id="search"
+                name="search"
+                placeholder="Search Employee"
+              />
+            </div>
+            <!-- Sorting dropdown -->
+            <select name="sorting" id="sorting" class="styled-select">
+              <option value="default">None</option>
+              <option value="name">Name</option>
+              <option value="departement">Department</option>
+              <option value="function">Function</option>
+            </select>
+          </div>
+
+          <!-- Action buttons -->
+          <div class="action-buttons">
+            <button class="btn btn-outline btn-sm btn-add">
+              <i class="fas fa-download"></i> Add New
+            </button>
+          </div>
+        </div>
+
+        <!-- Statistics cards section -->
+        <div class="stats-cards">
+          <!-- Card 1 -->
+          <div class="stat-card">
+            <div class="card-header">
+              <div>
+                <div class="card-value">1.007</div>
+                <div class="card-label">Test</div>
+              </div>
+              <div class="card-icon purple">
+                <i class="fas fa-users"></i>
+              </div>
+            </div>
+            <div class="card-change positive">
+              <i class="fas fa-arrow-up"></i>
+              <span>0.8% Test Test</span>
+            </div>
+          </div>
+          
+          <!-- Card 2 -->
+          <div class="stat-card">
+            <div class="card-header">
+              <div>
+                <div class="card-value">1.007</div>
+                <div class="card-label">Test</div>
+              </div>
+              <div class="card-icon purple">
+                <i class="fas fa-users"></i>
+              </div>
+            </div>
+            <div class="card-change positive">
+              <i class="fas fa-arrow-up"></i>
+              <span>0.8% Test Test</span>
+            </div>
+          </div>
+          
+          <!-- Card 3 -->
+          <div class="stat-card">
+            <div class="card-header">
+              <div>
+                <div class="card-value">1.007</div>
+                <div class="card-label">Test</div>
+              </div>
+              <div class="card-icon purple">
+                <i class="fas fa-users"></i>
+              </div>
+            </div>
+            <div class="card-change positive">
+              <i class="fas fa-arrow-up"></i>
+              <span>0.8% Test Test</span>
+            </div>
+          </div>
+          
+          <!-- Card 4 -->
+          <div class="stat-card">
+            <div class="card-header">
+              <div>
+                <div class="card-value">1.007</div>
+                <div class="card-label">Test</div>
+              </div>
+              <div class="card-icon purple">
+                <i class="fas fa-users"></i>
+              </div>
+            </div>
+            <div class="card-change positive">
+              <i class="fas fa-arrow-up"></i>
+              <span>0.8% Test Test</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data table section -->
+        <div class="table-card">
+          <div class="table-container">
+            <table class="data-table">
+              <!-- Table header -->
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Surname</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                  <th>Position</th>
+                  <th>Department</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              
+              <!-- Table body with sample data -->
+              <tbody>
+                <!-- Row 1 -->
+                <tr>
+                  <td>#1</td>
+                  <td>John1</td>
+                  <td>Smith</td>
+                  <td>John1@Smith.com</td>
+                  <td>0001</td>
+                  <td>Position 1</td>
+                  <td>Departement 1</td>
+                  <td>
+                    <button class="btn btn-outline btn-sm btn-edit">
+                      <i class="fas fa-pen-to-square"></i> Edit
+                    </button>
+                    <button class="btn btn-outline btn-sm btn-delete">
+                      <i class="fas fa-trash"></i> Delete
+                    </button>
+                  </td>
+                </tr>
+                
+                <!-- Row 2 -->
+                <tr>
+                  <td>#2</td>
+                  <td>John2</td>
+                  <td>Smith</td>
+                  <td>John1@Smith.com</td>
+                  <td>0002</td>
+                  <td>Position 2</td>
+                  <td>Departement 2</td>
+                  <td>
+                    <button class="btn btn-outline btn-sm btn-edit">
+                      <i class="fas fa-pen-to-square"></i> Edit
+                    </button>
+                    <button class="btn btn-outline btn-sm btn-delete">
+                      <i class="fas fa-trash"></i> Delete
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
